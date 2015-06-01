@@ -12,11 +12,20 @@ http://zmangames.com/rulebooks/Ricochet_Robots.pdf
   - if not, the player with the next shortest route claim must validate their solution, and so on
 
 ### How Robots Move
-- Once set in motion, a robot may not change course or stop. They must continue in a straight line until the hit an obstacle
+- Once set in motion, a robot may not change course or stop. It must continue in a straight line until it hits an obstacle
 - An obstacle may be any wall, the outside edge of the board, another robot, the center square, or any diagonal colored barrier
 - When a robot hits a colored barrier
-  - If the robot is the same color as the barrier, they move though it as if it wasn't there
-  - if the robot is a different color than the barrier, they bounce of it on a right angle
+  - if the robot is the same color as the barrier, it moves though the square as if the barrier wasn't there
+  - if the robot is a different color than the barrier, it will bounce off it in a right angle, continuing the move until it hits another barrier
 - Any time the Robot begins movement from a stopped position, that counts as 1 "move"
 
-### Programming challenges
+### Programming Considerations
+- What's the data shape?
+- How will the robot "move" through the data?
+- How will the robot move through the board, visually?
+- What's the UI for each player validating their solution?
+- Keeping score
+
+### Extra Credit
+- Websockets to connect multiple players
+- Algo for shortest possible route to display after the winning player has collected their token
